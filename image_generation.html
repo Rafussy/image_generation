@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image Generation</title>
+  <link rel="stylesheet" type="text/css" href="image_generation.css">
+  <link rel="stylesheet" type="text/css" href="image_generation_styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Image Generation</h1>
+
+    <nav>
+        <ul>
+          <li><a href="index.html">Image to Text</a></li>
+          <li><a href="#image-generation">Image Generation</a></li>
+        </ul>
+      </nav>
+
+    <div>
+        <section class="generation-section">
+      <h2>Upload Image for Generation</h2>
+      <input type="file" id="image-upload-input" accept="image/*">
+      <button id="generate-image-button">Generate Image</button>
+    </section>
+
+    <section class="generation-section">
+      <h2>Result</h2>
+      <canvas id="generation-result-canvas"></canvas>
+    </section>
+
+    <section class="generation-section">
+      <h2>Generate Image by Text</h2>
+      <input type="text" id="text-input" placeholder="Enter text for image generation">
+      <button id="generate-text-image-button">Generate Image</button>
+    </section>
+    </div>
+
+    
+
+    <script src="image_generation_script.js"></script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image Processing</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Image Processing</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#image-to-text">Image to Text</a></li>
+      <li><a href="image_generation.html">Image Generation</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="image-to-text">
+      <h2>Select an Image</h2>
+      <input type="file" id="image-input" accept="image/*">
+      <button id="convert-button">Convert</button>
+
+      <h2>Result</h2>
+      <canvas id="result-canvas"></canvas>
+      <textarea id="result-text" readonly></textarea>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
